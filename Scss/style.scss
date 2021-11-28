@@ -1,0 +1,838 @@
+@mixin tamanio ($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+}
+@import "Variables";
+
+html{
+    font-family: 'Bebas Neue', cursive;
+}
+body{
+    margin:0px;
+    background-image: linear-gradient(to bottom, #880d3f,#120b37, #0020D8 );
+    text-align: justify;
+}
+
+/*barra*/
+nav{
+    background-image: linear-gradient(to bottom right,#880d3f,#120b37, #0020D8);
+    
+}
+.barra__logo{
+    @include tamanio (100%, 45%)
+
+}
+.barra{
+    font-size: 62.5%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 15% 60% 15%;
+    grid-column-gap: 5%;
+    grid-template-rows: 100%;
+}
+ul{
+    margin: 0;
+    height: 100%;
+    display: flex;
+    font-size: 480%;
+    list-style-type: none;
+    justify-content: center;
+    box-sizing: content-box;
+    li{
+        border-style: groove;
+        font-family: 'Bebas Neue', cursive;
+        color: white;
+        background-color:#030B91 ;
+        opacity: 80%;
+        width: 30%;
+        text-align: center;
+        padding-top: 2%;
+        a{
+            text-decoration: none;
+            color: #ffffff;
+        }
+    }
+}
+
+
+li:hover{
+    background-color: #880d3f;
+    color: #ffffff;
+}
+
+.barra__Redes{
+    display: flex;
+    margin:0;
+    align-items: center;
+    padding-left: 3rem;
+}
+.barra__Redes--Youtube{
+    padding-left: 0%;
+}
+
+/*Estilo de Main*/
+p{
+    font-size: 270%;
+    color: #E6E6E6 ;
+}
+
+/*Estilo de Imagenes*/
+.section1__Imagenes{
+    top: 70%;
+    position: absolute;
+    @include tamanio(40%, 20%)
+}
+
+.section1__Imagenes--Izquierda{
+    left: 20.5%;
+}
+
+.section1__Imagenes--DelMedio{
+    left: 40.87%;
+}
+.section1__Imagenes--Derecha{
+    left: 61%;
+}
+.section1__texto{
+    margin-top: 10%;
+    color: $colorLetras;
+}
+.section1__texto--titulo{
+    padding-left:10%;
+    font-size: 4rem;
+}
+h3{
+    padding-top: 250px;
+    color: #E6E6E6;   
+}
+.section1__Spotify{
+    height: 500px;
+}
+/*Foooter*/
+
+#Participa{
+    font-size: 200%;
+    color: #E6E6E6;
+    padding-bottom: 2%;
+}
+
+.form-control{
+    width: 95%;
+}
+.section2{
+    margin-top: 5rem;
+}
+.section2__Contacto{
+    background-color: #880d3f;
+    margin-bottom: 5%;
+    margin-left: 15%;
+    @include tamanio(40%, 70%)
+}
+.section2__Mapa{
+    width: 100%;
+}
+
+/*Galería*/
+.Banderas{
+    align-items: stretch;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 18% 18% 18% 18% 18%;
+}
+.Banderas__Argentina{
+    width: 100%;
+    height: 100%;
+}
+.Banderas__Argentina:hover{
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.25);
+    -o-transform:scale(1.25);
+    transform:scale(1.25);
+}
+.Banderas__España{
+    @include tamanio(100%, 100%)
+}
+.Banderas__España:hover{
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.25);
+    -o-transform:scale(1.25);
+    transform:scale(1.25);
+}
+.Banderas__Colombia{
+    @include tamanio(100%, 100%)
+}
+.Banderas__Colombia:hover{
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.25);
+    -o-transform:scale(1.25);
+    transform:scale(1.25);
+}
+.Banderas__Chile{
+    @include tamanio(100%, 100%)
+}
+.Banderas__Chile:hover{
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.25);
+    -o-transform:scale(1.25);
+    transform:scale(1.25);
+}
+.Banderas__Mexico{
+    @include tamanio(100%, 100%)
+}
+.Banderas__Mexico:hover{
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.25);
+    -o-transform:scale(1.25);
+    transform:scale(1.25);
+}
+.Imagenes{
+    display: flex;
+    @include tamanio(100%, 100%)
+}
+.NombresDePaises{
+    color: white;
+    font-size: 4rem;
+    background-color: $colorLetrasSecundario;
+    padding-left: 50%;
+}
+.Video__Galeria{
+    @include tamanio(35rem, 100%)
+}
+/*Aplicacion*/
+.Aplicacion{
+    display: grid;
+    grid-template-areas:
+    'ImagenAplicacion VideoAplicacion'
+    'ImagenAplicacion VideoAplicacion'
+    'ImagenAplicacion TextoDeApp';
+    grid-template-columns: 3fr 7fr;
+    grid-template-rows: 52%;
+    background-color: #E6E6E6;
+}
+.Aplicacion__Video{
+    grid-area: VideoAplicacion;
+    width: 100%;
+}
+.Aplicacion__Imagen{
+    grid-area: ImagenAplicacion;
+}
+.Aplicacion__Texto{
+    grid-area: TextoDeApp;
+}
+.Aplicacion__Texto--span{
+    color: $colorLetrasTerciario;
+    font-size: 1.29rem;
+}
+
+
+
+/*Calendario*/
+.Calendario__Mes{
+    background-color: black;
+    color: $colorLetras;
+    padding-left: 45%;
+}
+.Calendario__Imagen{
+    width: 80%;
+}
+
+
+
+
+/*Error*/
+.Error{
+    background-image: url(../Media/error.jpg);
+    @include tamanio(100%, 100% )
+}
+.Error__Texto{
+    background-color: $colorLetrasSecundario;
+    color: $colorLetras;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+
+
+
+
+
+
+
+/*Celular*/
+
+@media only screen and (min-width:226px) and (max-width:322px) {
+    html{
+        font-size: 62.5%;
+        font-family: 'Bebas Neue', cursive;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        margin:0px;
+        background-color: #880d3f;
+        text-align: justify;
+    }
+    /*barra*/
+    nav{
+        background-color:#E6E6E6 ;
+    }
+    .barra__logo{
+        width: 60%;
+        height: 90%;
+        padding-left: 5%;
+    }
+    .barra{
+        margin: 0;
+        display: grid;
+        grid-template-columns: 15% 60% 15%;
+        grid-column-gap: 5%;
+        grid-template-rows: 100%;
+        font-size: 100%;
+    }
+    .barra__Redes{
+        padding-left: 0%;
+    }
+    ul{
+        margin: 0;
+        height: 100%;
+        display: flex;
+        font-size: 140%;
+        list-style-type: none;
+        justify-content: center;
+        padding-top: 5%;
+        padding-right: 15%;
+        box-sizing: content-box;
+        li{
+            border-color: #007aff ;
+            border-style: groove;
+            color: white;
+            background-color:#030B91 ;
+            opacity: 80%;
+            width: 50%;
+            text-align: center;
+            padding-top: 2%;
+            height: 70%;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+        li:hover{
+            background-color: white;
+        }
+    }
+
+    .NombresDePaises{
+        color: white;
+        font-size: 1.5rem;
+        background-color: $colorLetrasSecundario;
+        padding-left: 50%;
+    }
+
+    .barra__Redes{
+        padding-top: 25%;
+        display: flex;
+        margin:0;
+    }
+    .barra__Redes--Youtube{
+        padding-left: 0%;
+        @include tamanio (60%, 60%)
+    }
+    .barra__Redes--Twitter{
+        @include tamanio (60%, 60%)
+    }
+    .barra__Redes--Instagram{
+        @include tamanio (60%, 60%)
+    }
+
+
+    /*Estilo de Main*/
+    .CuadroDeTexto{
+        background-color: #030B91;
+    }
+    p{
+        font-size: 160%;
+    }
+    .Texto{
+        background-color: #030B91;
+        color: #E6E6E6 ;
+        padding-top: 25%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 100px;
+    }
+    /*Estilo de Imagenes*/
+    .section1__Imagenes{
+        top: 30%;
+        position: absolute;
+        @include tamanio(20%, 20%)
+    }
+    
+    .section1__Imagenes--Izquierda{
+        left: 21.5%;
+    }
+    
+    .section1__Imagenes--DelMedio{
+        left: 43%;
+    }
+    .section1__Imagenes--Derecha{
+        left: 64.2%;
+    }
+    
+    h3{
+        padding-top: 25%;
+        color: #E6E6E6;   
+    }
+    .section1{
+        background-color:#030B91;
+    }
+    .section1__Spotify{
+        height: 180px;
+    }
+    .section2__Mapa{
+        width: 100%;
+    }
+    /*Foooter*/
+    #Participa{
+        font-size: 200%;
+        padding-top: 10%;
+    }
+    .section2{
+        padding-left: 0%;
+    }
+    /*Aplicacion*/
+
+    .Aplicacion{
+        display: grid;
+        grid-template-areas:
+        'VideoAplicacion VideoAplicacion'
+        'TextoDeApp TextoDeApp'
+        'TextoDeApp TextoDeApp'
+        'TextoDeApp TextoDeApp'
+        'ImagenAplicacion ImagenAplicacion';
+        grid-template-rows: 20% 20% 10%;
+        background-color: #E6E6E6;
+        height: 1200px;
+    }
+    .VideoAplicacion{
+        grid-area: VideoAplicacion;
+    }
+    .ImagenAplicacion{
+        grid-area: ImagenAplicacion;
+        height: 190px;
+        overflow: hidden;
+    }
+    .Imagen{
+        width: 100%;
+    }
+    .Aplicacion__Texto{
+        grid-area: TextoDeApp;
+        &--span{
+            font-size: 1rem;
+        }
+    }
+    iframe{
+        width: 100%;
+    }
+    @for $i from 1 to 4 {
+        .Tabla__#{$i}{font-size: 0.2rem * $i;}
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Tablet*/
+@media only screen and (max-width:767px) and (min-width:321px) {
+    html{
+        font-size: 62.5%;
+        font-family: 'Bebas Neue', cursive;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        margin:0px;
+        background-color: #880d3f;
+        text-align: justify;
+    }
+    /*barra*/
+    nav{
+        background-color:#E6E6E6 ;
+    }
+    .NombresDePaises{
+        color: white;
+        font-size: 2rem;
+        background-color: $colorLetrasSecundario;
+        padding-left: 50%;
+    }
+    .barra__logo{
+        width: 65%;
+        height: 100%;
+        padding-left: 5%;
+    }
+    .barra{
+        margin: 0;
+        display: grid;
+        grid-template-columns: 15% 60% 15%;
+        grid-column-gap: 5%;
+        grid-template-rows: 100%;
+        font-size: 100%;
+    }
+    .barra__Redes{
+        padding-left: 0%;
+    }
+    .barra__Redes--Youtube{
+        padding-left: 0%;
+        @include tamanio (60%, 60%)
+    }
+    .barra__Redes--Twitter{
+        @include tamanio (60%, 60%)
+    }
+    .barra__Redes--Instagram{
+        @include tamanio (60%, 60%)
+    }
+
+    ul{
+        padding-left: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        font-size: 160%;
+        list-style-type: none;
+        padding-top: 3%;        
+        box-sizing: content-box;
+        li{
+            border-color: #007aff ;
+            border-style: groove;
+            color: white;
+            background-color:#030B91 ;
+            opacity: 80%;
+            width: 50%;
+            text-align: center;
+            padding-top: 3%;
+            height: 80%;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+
+    li:hover{
+        background-color: white;
+    }
+
+    .barra__Redes--Youtube{
+        padding-left: 0%;
+        @include tamanio (60%, 60%)
+    }
+    .barra__Redes--Twitter{
+        @include tamanio (60%, 60%)
+    }
+    .barra__Redes--Instagram{
+        @include tamanio (60%, 60%)
+    }
+
+    /*Estilo de Main*/
+    p{
+        font-size: 160%;
+    }
+    /*Estilo de Imagenes*/
+    .section1__Imagenes{
+        top: 30%;
+        position: absolute;
+        width: 20%; height: 20%;
+        border: outset;
+    }
+
+    .section1__Imagenes--Izquierda{
+        left: 21%;
+    }
+
+    .section1__Imagenes--DelMedio{
+        left: 41%;
+    }
+    .section1__Imagenes--Derecha{
+        left: 61.3%;
+    }
+
+    h3{
+        padding-top: 25%;
+        color: #E6E6E6;   
+    }
+
+    .section1{
+        background-color:#030B91;
+    }
+
+    /*Foooter*/
+
+    #Participa{
+        font-size: 200%;
+        padding-top: 10%;
+    }
+
+    .section2{
+        padding-left: 0%;
+    }
+
+    /*Aplicacion*/
+
+    .Aplicacion{
+        display: grid;
+        grid-template-areas:
+        'ImagenAplicacion ImagenAplicacion'
+        'VideoAplicacion VideoAplicacion'
+        'TextoDeApp TextoDeApp';
+        grid-template-rows: 20% 20% 10%;
+        background-color: #E6E6E6;
+        height: 1200px;
+    }
+    .Aplicacion__Video{
+        grid-area: VideoAplicacion;
+    }
+    .Aplicacion__Imagen{
+        grid-area: ImagenAplicacion;
+        overflow: hidden;
+    }
+    .Imagen{
+        @include tamanio(300%,100%)
+    }
+    .Aplicacion__Texto{
+        grid-area: TextoDeApp;
+        padding-top: 4rem;
+    }
+    /*Calendario*/
+    @for $i from 1 to 4 {
+        .Tabla__#{$i}{font-size: 0.29rem * $i;}
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1288px){
+    ul{
+        margin: 0;
+        height: 100%;
+        display: flex;
+        font-size: 170%;
+        list-style-type: none;
+        justify-content: center;
+        box-sizing: content-box;
+    }
+    .barra{
+        font-size: 100%;
+    }
+    .section1__Spotify{
+        height: 270px;
+    }
+    .section2{
+        padding-left: 0%;
+    }
+    .section2__Mapa{
+        width: 775px;
+    }
+    .barra__Redes{
+        padding-left: 0%;
+    }
+    /*Aplicacion*/
+    .Aplicacion__Video{
+        @include tamanio(25,23)
+    }
+    .Aplicacion__Imagen{
+        width: 5rem;
+    }
+    .Imagen{
+        width:250px;
+    }
+    
+}
+
+
+@media only screen and (max-width:226px){
+    html{
+        font-size: 62.5%;
+        font-family: 'Bebas Neue', cursive;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        margin:0px;
+        background-color: #880d3f;
+        text-align: justify;
+    }
+    /*barra*/
+    nav{
+        background-color:#E6E6E6 ;
+    }
+    .barra__logo{
+        width: 60%;
+        height: 90%;
+        padding-left: 5%;
+    }
+    .barra{
+        margin: 0;
+        display: grid;
+        grid-template-columns: 15% 60% 15%;
+        grid-column-gap: 5%;
+        grid-template-rows: 100%;
+    }
+    .barra__Redes{
+        padding-left: 0%;
+    }
+    .barra__Redes--Youtube{
+        padding-left: 0%;
+        @include tamanio (60%, 60%)
+    }
+    .barra__Redes--Twitter{
+        @include tamanio (60%, 60%)
+    }
+    .barra__Redes--Instagram{
+        @include tamanio (60%, 60%)
+    }
+
+    ul{
+        margin: 0;
+        height: 100%;
+        display: flex;
+        font-size: 140%;
+        list-style-type: none;
+        justify-content: center;
+        padding-top: 5%;
+        padding-right: 15%;
+        box-sizing: content-box;
+        li{
+            border-color: #007aff ;
+            border-style: groove;
+            color: white;
+            background-color:#030B91 ;
+            opacity: 80%;
+            width: 50%;
+            text-align: center;
+            padding-top: 2%;
+            height: 70%;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+        li:hover{
+            background-color: white;
+        }
+    }
+
+
+
+    .barra__Redes{
+        padding-top: 25%;
+        display: flex;
+        margin:0;
+    }
+    .barra__Redes--Youtube{
+        padding-left: 0%;
+    }
+
+    /*Estilo de Main*/
+    .CuadroDeTexto{
+        background-color: #030B91;
+    }
+    p{
+        font-size: 160%;
+    }
+    .Texto{
+        background-color: #030B91;
+        color: #E6E6E6 ;
+        padding-top: 25%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 100px;
+    }
+    /*Estilo de Imagenes*/
+    .section1__Imagenes{
+        top: 15%;
+        position: absolute;
+        @include tamanio(10%, 20%)
+    }
+    
+    .section1__Imagenes--Izquierda{
+        left: 21.5%;
+    }
+    
+    .section1__Imagenes--DelMedio{
+        left: 43%;
+    }
+    .section1__Imagenes--Derecha{
+        left: 64.2%;
+    }
+    
+    h3{
+        padding-top: 25%;
+        color: #E6E6E6;   
+    }
+    .section1{
+        background-color:#030B91;
+    }
+    .section1__Spotify{
+        height: 180px;
+    }
+    .section2__Mapa{
+        width: 100%;
+    }
+    /*Foooter*/
+    #Participa{
+        font-size: 200%;
+        padding-top: 10%;
+    }
+    .section2{
+        padding-left: 0%;
+    }
+    /*Aplicacion*/
+
+    .Aplicacion{
+        display: grid;
+        grid-template-areas:
+        'ImagenAplicacion ImagenAplicacion'
+        'VideoAplicacion VideoAplicacion'
+        'TextoDeApp TextoDeApp';
+        grid-template-rows: 20% 20% 10%;
+        background-color: #E6E6E6;
+        height: 1200px;
+    }
+    .Aplicacion__Video{
+        grid-area: VideoAplicacion;
+    }
+    .Aplicacion__Imagen{
+        grid-area: ImagenAplicacion;
+        height: 190px;
+        overflow: hidden;
+    }
+    .Imagen{
+        width: 100%;
+    }
+    .Aplicacion__Texto{
+        grid-area: TextoDeApp;
+    }
+    iframe{
+        width: 100%;
+    }
+    .NombresDePaises{
+        color: white;
+        font-size: 1rem;
+        background-color: $colorLetrasSecundario;
+        padding-left: 50%;
+    }
+}
