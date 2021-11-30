@@ -2,6 +2,9 @@
 html {
   font-family: 'Bebas Neue', cursive; }
 
+h1 {
+  color: #E6E6E6; }
+
 body {
   margin: 0px;
   background-image: linear-gradient(to bottom, #880d3f, #120b37, #0020D8);
@@ -99,6 +102,10 @@ h3 {
   color: #E6E6E6;
   padding-bottom: 2%; }
 
+.Texto_footer {
+  padding-left: 8%;
+  padding-bottom: 9%; }
+
 .form-control {
   width: 95%; }
 
@@ -107,9 +114,8 @@ h3 {
 
 .section2__Contacto {
   background-color: #880d3f;
-  margin-bottom: 5%;
   margin-left: 15%;
-  height: 40%;
+  height: 100%;
   width: 70%; }
 
 .section2__Mapa {
@@ -133,11 +139,11 @@ h3 {
   -o-transform: scale(1.25);
   transform: scale(1.25); }
 
-.Banderas__España {
+.Banderas__Espania {
   height: 100%;
   width: 100%; }
 
-.Banderas__España:hover {
+.Banderas__Espania:hover {
   -webkit-transform: scale(1.25);
   -moz-transform: scale(1.25);
   -ms-transform: scale(1.25);
@@ -457,8 +463,8 @@ h3 {
   .section1__Imagenes {
     top: 30%;
     position: absolute;
-    width: 20%;
     height: 20%;
+    width: 20%;
     border: outset; }
   .section1__Imagenes--Izquierda {
     left: 21%; }
@@ -502,6 +508,11 @@ h3 {
     font-size: 0.58rem; }
   .Tabla__3 {
     font-size: 0.87rem; } }
+
+@media only screen and (max-width: 767px) and (min-width: 440px) {
+  .section1__Imagenes {
+    height: 40%;
+    width: 20%; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1288px) {
   ul {
