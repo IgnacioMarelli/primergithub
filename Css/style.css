@@ -327,15 +327,18 @@ h3 {
     padding-bottom: 100px; }
   /*Estilo de Imagenes*/
   .section1__Imagenes {
-    position: relative;
+    position: absolute;
     height: 3rem;
     width: 3rem; }
   .section1__Imagenes--Izquierda {
-    left: 21.5%; }
+    left: 21.5%;
+    top: 10rem; }
   .section1__Imagenes--DelMedio {
-    left: 43%; }
+    left: 43%;
+    top: 10rem; }
   .section1__Imagenes--Derecha {
-    left: 64.2%; }
+    left: 64.2%;
+    top: 10rem; }
   h3 {
     padding-top: 25%;
     color: #E6E6E6; }
