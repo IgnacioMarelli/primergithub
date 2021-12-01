@@ -632,7 +632,7 @@ h3{
 }
 @media only screen and (max-width:767px) and (min-width:560px){
     .section1__Imagenes{
-    @include tamanio(9rem, 11rem);
+    @include tamanio(11rem, 11rem);
     }
 }
 
