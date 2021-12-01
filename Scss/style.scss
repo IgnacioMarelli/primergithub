@@ -567,7 +567,9 @@ h3{
         @include tamanio(6.8rem,6.8rem);
         border: outset;
     }
-
+    .carousel{
+        position: absolute;
+    }
     .section1__Imagenes--Izquierda{
         left: 21%;
     }

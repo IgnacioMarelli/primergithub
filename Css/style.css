@@ -468,6 +468,8 @@ h3 {
     height: 6.8rem;
     width: 6.8rem;
     border: outset; }
+  .carousel {
+    position: absolute; }
   .section1__Imagenes--Izquierda {
     left: 21%; }
   .section1__Imagenes--DelMedio {
