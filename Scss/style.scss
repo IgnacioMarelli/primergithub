@@ -374,22 +374,20 @@ h3{
     }
     /*Estilo de Imagenes*/
     .section1__Imagenes{
+        top: 10rem;
         position: absolute;
-        @include tamanio(3rem, 3rem);
+        @include tamanio(6rem, 6rem);
     }
     
     .section1__Imagenes--Izquierda{
-        left: 21.5%;
-        top: 10rem;
+        left: 7rem;
     }
     
     .section1__Imagenes--DelMedio{
-        left: 43%;
-        top: 10rem;
+        left: 12.5rem;
     }
     .section1__Imagenes--Derecha{
-        left: 64.2%;
-        top: 10rem;
+        left: 18rem;
     }
     
     h3{
