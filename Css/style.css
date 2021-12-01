@@ -465,11 +465,9 @@ h3 {
   .section1__Imagenes {
     top: 8rem;
     position: absolute;
-    height: 6.8rem;
-    width: 6.8rem;
+    height: 7.8rem;
+    width: 7.8rem;
     border: outset; }
-  .carousel {
-    position: absolute; }
   .section1__Imagenes--Izquierda {
     left: 21%; }
   .section1__Imagenes--DelMedio {
