@@ -328,7 +328,7 @@ h3 {
   /*Estilo de Imagenes*/
   .section1__Imagenes {
     top: 60rem;
-    position: absolute;
+    position: fixed;
     height: 3rem;
     width: 3rem; }
   .section1__Imagenes--Izquierda {

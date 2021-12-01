@@ -375,7 +375,7 @@ h3{
     /*Estilo de Imagenes*/
     .section1__Imagenes{
         top: 60rem;
-        position: absolute;
+        position: fixed;
         @include tamanio(3rem, 3rem);
     }
     
