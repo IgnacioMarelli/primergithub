@@ -661,6 +661,24 @@ h3{
     .barra__Redes{
         padding-left: 0%;
     }
+    .section1__Imagenes{
+        top: 10rem;
+        position: absolute;
+        @include tamanio(9rem,9rem);
+        border: outset;
+    }
+
+    .section1__Imagenes--Izquierda{
+        left: 21%;
+    }
+
+    .section1__Imagenes--DelMedio{
+        left: 41%;
+    }
+    .section1__Imagenes--Derecha{
+        left: 61.3%;
+    }
+
     /*Aplicacion*/
     .Aplicacion__Video{
         @include tamanio(25,23)

@@ -535,6 +535,18 @@ h3 {
     width: 775px; }
   .barra__Redes {
     padding-left: 0%; }
+  .section1__Imagenes {
+    top: 10rem;
+    position: absolute;
+    height: 9rem;
+    width: 9rem;
+    border: outset; }
+  .section1__Imagenes--Izquierda {
+    left: 21%; }
+  .section1__Imagenes--DelMedio {
+    left: 41%; }
+  .section1__Imagenes--Derecha {
+    left: 61.3%; }
   /*Aplicacion*/
   .Aplicacion__Video {
     height: 25;
