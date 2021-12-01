@@ -9,6 +9,7 @@ html{
 }
 h1{
     color: $colorLetras;
+    font-family: 'Bebas Neue', cursive;
 }
 body{
     margin:0px;
@@ -373,7 +374,7 @@ h3{
     }
     /*Estilo de Imagenes*/
     .section1__Imagenes{
-        top: 30%;
+        top: 10rem;
         position: absolute;
         @include tamanio(20%, 20%)
     }
