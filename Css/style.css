@@ -463,10 +463,10 @@ h3 {
     font-size: 160%; }
   /*Estilo de Imagenes*/
   .section1__Imagenes {
-    top: 8rem;
+    top: 12rem;
     position: absolute;
-    height: 6.8rem;
-    width: 6.8rem;
+    height: 8rem;
+    width: 8rem;
     border: outset; }
   .section1__Imagenes--Izquierda {
     left: 21%; }

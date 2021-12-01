@@ -562,9 +562,9 @@ h3{
     }
     /*Estilo de Imagenes*/
     .section1__Imagenes{
-        top: 8rem;
+        top: 12rem;
         position: absolute;
-        @include tamanio(6.8rem,6.8rem);
+        @include tamanio(8rem,8rem);
         border: outset;
     }
 
