@@ -327,8 +327,7 @@ h3 {
     padding-bottom: 100px; }
   /*Estilo de Imagenes*/
   .section1__Imagenes {
-    top: 60rem;
-    position: fixed;
+    position: relative;
     height: 3rem;
     width: 3rem; }
   .section1__Imagenes--Izquierda {
