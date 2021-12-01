@@ -266,7 +266,7 @@ h3 {
     grid-template-columns: 15% 60% 15%;
     grid-column-gap: 5%;
     grid-template-rows: 100%;
-    height: 7rem;
+    height: 5rem;
     font-size: 100%; }
   .barra__Redes {
     padding-left: 0%; }
@@ -463,10 +463,10 @@ h3 {
     font-size: 160%; }
   /*Estilo de Imagenes*/
   .section1__Imagenes {
-    top: 30%;
+    top: 8rem;
     position: absolute;
-    height: 20%;
-    width: 20%;
+    height: 6.8rem;
+    width: 6.8rem;
     border: outset; }
   .section1__Imagenes--Izquierda {
     left: 21%; }
@@ -511,10 +511,10 @@ h3 {
   .Tabla__3 {
     font-size: 0.87rem; } }
 
-@media only screen and (max-width: 767px) and (min-width: 440px) {
+@media only screen and (max-width: 767px) and (min-width: 560px) {
   .section1__Imagenes {
-    height: 40%;
-    width: 20%; } }
+    height: 12rem;
+    width: 11rem; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1288px) {
   ul {
