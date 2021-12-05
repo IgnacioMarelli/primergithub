@@ -304,6 +304,9 @@ h3{
         height: 5rem;
         font-size: 100%;
     }
+    .barra__Redes{
+        display: none;
+    }
     .barra__logo{
         @include tamanio(4rem, 60%);
         padding-left: 5%;

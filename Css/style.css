@@ -270,6 +270,8 @@ h3 {
     grid-template-rows: 100%;
     height: 5rem;
     font-size: 100%; }
+  .barra__Redes {
+    display: none; }
   .barra__logo {
     height: 4rem;
     width: 60%;
