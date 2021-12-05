@@ -331,9 +331,11 @@ h3{
             color: white;
             background-color:#030B91 ;
             opacity: 95%;
-            @include tamanio(70%,17rem);
+            width: 19rem;
             margin: 0;
             padding: 10px;
+            position: relative;
+            z-index: 3;
             a{
                 text-decoration: none;
                 color: white;
@@ -539,9 +541,11 @@ h3{
             color: white;
             background-color:#030B91 ;
             opacity: 95%;
-            @include tamanio(80%,20rem);
+            width: 20rem;
             margin: 0;
             padding: 10px;
+            position: relative;
+            z-index: 3;
             a{
                 text-decoration: none;
                 color: white;
