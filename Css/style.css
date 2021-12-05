@@ -108,7 +108,7 @@ h3 {
   padding-bottom: 2%; }
 
 .Texto_footer {
-  padding-left: 20rem;
+  padding-left: 10rem;
   padding-bottom: 5rem;
   padding-top: 5rem; }
 
@@ -271,9 +271,10 @@ h3 {
     height: 5rem;
     font-size: 100%; }
   .barra__logo {
-    height: 90%;
+    height: 4rem;
     width: 60%;
     padding-left: 5%;
+    padding-top: 0.5rem;
     grid-area: logo; }
   #menu_input {
     display: none; }
@@ -322,19 +323,6 @@ h3 {
     font-size: 1.5rem;
     background-color: #DB8310;
     padding-left: 50%; }
-  .barra__Redes {
-    display: none;
-    padding-left: 0%; }
-  .barra__Redes--Youtube {
-    padding-left: 0%;
-    height: 60%;
-    width: 60%; }
-  .barra__Redes--Twitter {
-    height: 60%;
-    width: 60%; }
-  .barra__Redes--Instagram {
-    height: 60%;
-    width: 60%; }
   /*Estilo de Main*/
   .CuadroDeTexto {
     background-color: #030B91; }
@@ -362,6 +350,8 @@ h3 {
   h3 {
     padding-top: 25%;
     color: #E6E6E6; }
+  .section1__texto--titulo {
+    padding-left: 0; }
   .section1 {
     background-color: #030B91; }
   .section1__Spotify {
@@ -372,6 +362,8 @@ h3 {
   #Participa {
     font-size: 200%;
     padding-top: 10%; }
+  .Texto_footer {
+    padding-left: 1rem; }
   .section2 {
     padding-left: 0%; }
   /*Aplicacion*/
@@ -416,8 +408,9 @@ h3 {
     background-color: #DB8310;
     padding-left: 50%; }
   .barra__logo {
+    padding-top: 0.5rem;
+    height: 5rem;
     width: 65%;
-    height: 100%;
     padding-left: 5%; }
   .barra {
     margin: 0;
@@ -500,6 +493,8 @@ h3 {
   #Participa {
     font-size: 200%;
     padding-top: 10%; }
+  .Texto_footer {
+    padding-left: 1rem; }
   .section2 {
     padding-left: 0%; }
   /*Aplicacion*/
