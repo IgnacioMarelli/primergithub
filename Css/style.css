@@ -27,7 +27,7 @@ nav {
   grid-column-gap: 5%;
   grid-template-rows: 100%; }
 
-.Menu {
+.Menu_label {
   display: none; }
 
 ul {
@@ -261,32 +261,42 @@ h3 {
   /*barra*/
   nav {
     background-color: #E6E6E6; }
-  .barra__logo {
-    width: 60%;
-    height: 90%;
-    padding-left: 5%; }
   .barra {
     margin: 0;
     display: grid;
-    grid-template-columns: 15% 60% 15%;
-    grid-column-gap: 5%;
+    grid-template-areas: 'menu logo';
+    grid-template-columns: 15% 15%;
+    grid-column-gap: 70%;
     grid-template-rows: 100%;
     height: 5rem;
     font-size: 100%; }
-  .barra__Redes {
-    padding-left: 0%; }
+  .barra__logo {
+    height: 90%;
+    width: 60%;
+    padding-left: 5%;
+    grid-area: logo; }
+  #menu_input {
+    display: none; }
+  .Menu_label {
+    display: grid;
+    color: #E6E6E6;
+    border-color: #120b37;
+    background: #880d3f; }
+  .Menu {
+    grid-area: menu; }
   ul {
     display: none; }
     ul li {
       border-color: #007aff;
       border-style: groove;
+      display: block;
       color: white;
       background-color: #030B91;
-      opacity: 80%;
-      width: 50%;
-      text-align: center;
-      padding-top: 2%;
-      height: 70%; }
+      opacity: 95%;
+      height: 70%;
+      width: 17rem;
+      margin: 0;
+      padding: 10px; }
       ul li a {
         text-decoration: none;
         color: white; }
@@ -294,28 +304,26 @@ h3 {
       background-color: white; }
   input:checked ~ ul {
     display: block; }
-  input {
-    display: none; }
   label {
     box-sizing: border-box;
     display: inline-block;
     border: 1px solid black;
     border-radius: 5px;
-    width: 30px;
-    height: 30px;
+    height: 100%;
+    width: 100%;
     line-height: 30px;
     font-weight: bold;
     text-align: center;
-    user-select: none; }
+    user-select: none;
+    align-content: center; }
   .NombresDePaises {
     color: white;
     font-size: 1.5rem;
     background-color: #DB8310;
     padding-left: 50%; }
   .barra__Redes {
-    padding-top: 25%;
-    display: flex;
-    margin: 0; }
+    display: none;
+    padding-left: 0%; }
   .barra__Redes--Youtube {
     padding-left: 0%;
     height: 60%;
@@ -385,13 +393,7 @@ h3 {
     .Aplicacion__Texto--span {
       font-size: 1rem; }
   iframe {
-    width: 100%; }
-  .Tabla__1 {
-    font-size: 0.2rem; }
-  .Tabla__2 {
-    font-size: 0.4rem; }
-  .Tabla__3 {
-    font-size: 0.6rem; } }
+    width: 100%; } }
 
 /*Tablet*/
 @media only screen and (max-width: 767px) and (min-width: 321px) {
@@ -419,58 +421,55 @@ h3 {
   .barra {
     margin: 0;
     display: grid;
-    grid-template-columns: 15% 60% 15%;
-    grid-column-gap: 5%;
+    grid-template-areas: 'menu logo';
+    grid-template-columns: 15% 15%;
+    grid-column-gap: 70%;
     grid-template-rows: 100%;
-    font-size: 100%; }
+    font-size: 100%;
+    height: 6rem; }
   .barra__Redes {
-    padding-left: 0%; }
-  .barra__Redes--Youtube {
-    padding-left: 0%;
-    height: 60%;
-    width: 60%; }
-  .barra__Redes--Twitter {
-    height: 60%;
-    width: 60%; }
-  .barra__Redes--Instagram {
-    height: 60%;
-    width: 60%; }
+    display: none; }
   ul {
-    padding-left: 0;
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    font-size: 160%;
-    list-style-type: none;
-    padding-top: 3%;
-    box-sizing: content-box;
-    margin-bottom: 1rem; }
+    display: none; }
     ul li {
       border-color: #007aff;
       border-style: groove;
+      display: block;
       color: white;
       background-color: #030B91;
-      opacity: 80%;
-      width: 50%;
-      text-align: center;
-      padding-top: 3%;
-      height: 80%; }
+      opacity: 95%;
+      height: 80%;
+      width: 20rem;
+      margin: 0;
+      padding: 10px; }
       ul li a {
         text-decoration: none;
         color: white; }
-  li:hover {
-    background-color: white; }
-  .barra__Redes--Youtube {
-    padding-left: 0%;
-    height: 60%;
-    width: 60%; }
-  .barra__Redes--Twitter {
-    height: 60%;
-    width: 60%; }
-  .barra__Redes--Instagram {
-    height: 60%;
-    width: 60%; }
+    ul li:hover {
+      background-color: white; }
+  #menu_input {
+    display: none; }
+  .Menu_label {
+    display: grid;
+    color: #E6E6E6;
+    border-color: #120b37;
+    background: #880d3f; }
+  .Menu {
+    grid-area: menu; }
+  input:checked ~ ul {
+    display: block; }
+  label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    align-content: center; }
   /*Estilo de Main*/
   p {
     font-size: 160%; }

@@ -35,7 +35,7 @@ nav{
     grid-template-rows: 100%;
 }
 
-.Menu{
+.Menu_label{
     display: none;
 }
 ul{
@@ -277,7 +277,7 @@ h3{
 
 /*Celular*/
 
-@media only screen and (min-width:226px) and (max-width:322px) {
+@media only screen and (min-width:226px) and (max-width:322px){
     html{
         font-size: 62.5%;
         font-family: 'Bebas Neue', cursive;
@@ -293,35 +293,47 @@ h3{
     nav{
         background-color:#E6E6E6 ;
     }
-    .barra__logo{
-        width: 60%;
-        height: 90%;
-        padding-left: 5%;
-    }
+
     .barra{
         margin: 0;
         display: grid;
-        grid-template-columns: 15% 60% 15%;
-        grid-column-gap: 5%;
+        grid-template-areas: 'menu logo';
+        grid-template-columns: 15% 15%;
+        grid-column-gap: 70%;
         grid-template-rows: 100%;
         height: 5rem;
         font-size: 100%;
     }
-    .barra__Redes{
-        padding-left: 0%;
+    .barra__logo{
+        @include tamanio(90%, 60%);
+        padding-left: 5%;
+        grid-area: logo;
+    }
+
+    #menu_input{
+        display: none;
+    }
+    .Menu_label{
+        display: grid;
+        color: $colorLetras;
+        border-color: $colorLetrasTerciario;
+        background: $colorFondoSecundario;
+    }
+    .Menu{
+        grid-area: menu;
     }
     ul{
         display: none;
         li{
             border-color: #007aff ;
             border-style: groove;
+            display: block;
             color: white;
             background-color:#030B91 ;
-            opacity: 80%;
-            width: 50%;
-            text-align: center;
-            padding-top: 2%;
-            height: 70%;
+            opacity: 95%;
+            @include tamanio(70%,17rem);
+            margin: 0;
+            padding: 10px;
             a{
                 text-decoration: none;
                 color: white;
@@ -331,24 +343,24 @@ h3{
             background-color: white;
         }
     }
+
     input:checked ~ ul{
         display: block;
     }
-    input{
-        display: none;
-    }
-    label {
+
+    label{
         box-sizing: border-box;
         display: inline-block;
         border: 1px solid black;
         border-radius: 5px;
-        width: 30px;
-        height: 30px;
+        @include tamanio(100%,100%);
         line-height: 30px;
         font-weight: bold;
         text-align: center;
         user-select: none;
-      }
+        align-content: center;
+    }
+
     .NombresDePaises{
         color: white;
         font-size: 1.5rem;
@@ -357,9 +369,8 @@ h3{
     }
 
     .barra__Redes{
-        padding-top: 25%;
-        display: flex;
-        margin:0;
+        display: none;
+        padding-left: 0%;
     }
     .barra__Redes--Youtube{
         padding-left: 0%;
@@ -461,9 +472,6 @@ h3{
     iframe{
         width: 100%;
     }
-    @for $i from 1 to 4 {
-        .Tabla__#{$i}{font-size: 0.2rem * $i;}
-    }
 }
 
 
@@ -510,66 +518,66 @@ h3{
     .barra{
         margin: 0;
         display: grid;
-        grid-template-columns: 15% 60% 15%;
-        grid-column-gap: 5%;
+        grid-template-areas:
+        'menu logo';
+        grid-template-columns: 15% 15%;
+        grid-column-gap: 70%;
         grid-template-rows: 100%;
         font-size: 100%;
+        height: 6rem;
     }
     .barra__Redes{
-        padding-left: 0%;
-    }
-    .barra__Redes--Youtube{
-        padding-left: 0%;
-        @include tamanio (60%, 60%)
-    }
-    .barra__Redes--Twitter{
-        @include tamanio (60%, 60%)
-    }
-    .barra__Redes--Instagram{
-        @include tamanio (60%, 60%)
+        display: none;
     }
 
     ul{
-        padding-left: 0;
-        margin: 0;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        font-size: 160%;
-        list-style-type: none;
-        padding-top: 3%;        
-        box-sizing: content-box;
-        margin-bottom: 1rem;
+        display: none;
         li{
             border-color: #007aff ;
             border-style: groove;
+            display: block;
             color: white;
             background-color:#030B91 ;
-            opacity: 80%;
-            width: 50%;
-            text-align: center;
-            padding-top: 3%;
-            height: 80%;
+            opacity: 95%;
+            @include tamanio(80%,20rem);
+            margin: 0;
+            padding: 10px;
             a{
                 text-decoration: none;
                 color: white;
             }
         }
+        li:hover{
+            background-color: white;
+        }
     }
 
-    li:hover{
-        background-color: white;
+    #menu_input{
+        display: none;
     }
-
-    .barra__Redes--Youtube{
-        padding-left: 0%;
-        @include tamanio (60%, 60%)
+    .Menu_label{
+        display: grid;
+        color: $colorLetras;
+        border-color: $colorLetrasTerciario;
+        background: $colorFondoSecundario;
     }
-    .barra__Redes--Twitter{
-        @include tamanio (60%, 60%)
+    .Menu{
+        grid-area: menu;
     }
-    .barra__Redes--Instagram{
-        @include tamanio (60%, 60%)
+    input:checked ~ ul {
+        display: block;
+    }
+    label{
+        box-sizing: border-box;
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 5px;
+        @include tamanio(100%,100%);
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+        align-content: center;
     }
 
     /*Estilo de Main*/
