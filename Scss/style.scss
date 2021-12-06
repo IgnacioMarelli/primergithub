@@ -107,13 +107,9 @@ p{
     color: $colorLetras;
 }
 .section1__texto--titulo{
-    padding-left: 14rem;
     font-size: 4rem;
 }
-h3{
-    padding-top: 250px;
-    color: #E6E6E6;   
-}
+
 .section1__Spotify{
     height: 500px;
 }
@@ -280,14 +276,8 @@ h3{
 @media only screen and (min-width:226px) and (max-width:322px){
     html{
         font-size: 62.5%;
-        font-family: 'Bebas Neue', cursive;
         margin: 0;
         padding: 0;
-    }
-    body{
-        margin:0px;
-        background-color: #880d3f;
-        text-align: justify;
     }
     /*barra*/
     nav{
@@ -367,73 +357,52 @@ h3{
         align-content: center;
     }
 
-    .NombresDePaises{
-        color: white;
-        font-size: 1.5rem;
-        background-color: $colorLetrasSecundario;
-        padding-left: 50%;
-    }
+        /*Estilo de Main*/
+        p{
+            font-size: 160%;
+        }
+        /*Estilo de Imagenes*/
+        .section1__Imagenes{
+            top: 10rem;
+            position: absolute;
+            @include tamanio(8rem, 6rem);
+        }
+        
+        .section1__Imagenes--Izquierda{
+            left: 7rem;
+        }
+        
+        .section1__Imagenes--DelMedio{
+            left: 12.5rem;
+        }
+        .section1__Imagenes--Derecha{
+            left: 18rem;
+        }
+        
+        .section1__texto--titulo {
+            padding-left: 0;
+        }
+        .section1{
+            background-color:#030B91;
+        }
+        .section1__Spotify{
+            height: 180px;
+        }
+        .section2__Mapa{
+            width: 100%;
+        }
+        /*Foooter*/
+        #Participa{
+            font-size: 200%;
+            padding-top: 10%;
+        }
+        .Texto_footer {
+            padding-left: 1rem;
+        }
+        .section2{
+            padding-left: 0%;
+        }
 
-    /*Estilo de Main*/
-    .CuadroDeTexto{
-        background-color: #030B91;
-    }
-    p{
-        font-size: 160%;
-    }
-    .Texto{
-        background-color: #030B91;
-        color: #E6E6E6 ;
-        padding-top: 25%;
-        padding-left: 10%;
-        padding-right: 10%;
-        padding-bottom: 100px;
-    }
-    /*Estilo de Imagenes*/
-    .section1__Imagenes{
-        top: 10rem;
-        position: absolute;
-        @include tamanio(8rem, 6rem);
-    }
-    
-    .section1__Imagenes--Izquierda{
-        left: 7rem;
-    }
-    
-    .section1__Imagenes--DelMedio{
-        left: 12.5rem;
-    }
-    .section1__Imagenes--Derecha{
-        left: 18rem;
-    }
-    
-    h3{
-        padding-top: 25%;
-        color: #E6E6E6;   
-    }
-    .section1__texto--titulo {
-        padding-left: 0;
-    }
-    .section1{
-        background-color:#030B91;
-    }
-    .section1__Spotify{
-        height: 180px;
-    }
-    .section2__Mapa{
-        width: 100%;
-    }
-    /*Foooter*/
-    #Participa{
-        font-size: 200%;
-        padding-top: 10%;
-    }
-    .Texto_footer {
-        padding-left: 1rem;
-    }
-    .section2{
-        padding-left: 0%;
-    }
     /*Aplicacion*/
 
     .Aplicacion{
@@ -468,6 +437,14 @@ h3{
     iframe{
         width: 100%;
     }
+    
+    /*Galeria*/
+    .NombresDePaises{
+        color: white;
+        font-size: 1.5rem;
+        background-color: $colorLetrasSecundario;
+        padding-left: 50%;
+    }
 }
 
 
@@ -487,14 +464,8 @@ h3{
 @media only screen and (max-width:767px) and (min-width:321px) {
     html{
         font-size: 62.5%;
-        font-family: 'Bebas Neue', cursive;
         margin: 0;
         padding: 0;
-    }
-    body{
-        margin:0px;
-        background-color: #880d3f;
-        text-align: justify;
     }
     /*barra*/
     nav{
@@ -727,11 +698,6 @@ h3{
         font-family: 'Bebas Neue', cursive;
         margin: 0;
         padding: 0;
-    }
-    body{
-        margin:0px;
-        background-color: #880d3f;
-        text-align: justify;
     }
     /*barra*/
     nav{
