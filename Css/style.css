@@ -96,13 +96,12 @@ p {
 .section1__Spotify {
   height: 500px; }
 
-/*Foooter*/
 #Participa {
   font-size: 200%;
   color: #E6E6E6;
   padding-bottom: 2%; }
 
-.Texto_footer {
+.Texto_form {
   padding-left: 10rem;
   padding-bottom: 5rem;
   padding-top: 5rem; }
@@ -121,6 +120,10 @@ p {
 
 .section2__Mapa {
   width: 100%; }
+
+/*Foooter*/
+.Menu-footer {
+  display: inline; }
 
 /*Galería*/
 .Banderas {
@@ -192,7 +195,7 @@ p {
 .NombresDePaises {
   color: white;
   font-size: 4rem;
-  background-color: #DB8310;
+  background-color: #030B91;
   padding-left: 50%; }
 
 .Video__Galeria {
@@ -337,7 +340,7 @@ p {
   #Participa {
     font-size: 200%;
     padding-top: 10%; }
-  .Texto_footer {
+  .Texto_form {
     padding-left: 1rem; }
   .section2 {
     padding-left: 0%; }
@@ -469,7 +472,7 @@ p {
   #Participa {
     font-size: 200%;
     padding-top: 10%; }
-  .Texto_footer {
+  .Texto_form {
     padding-left: 1rem; }
   .section2 {
     padding-left: 0%; }
