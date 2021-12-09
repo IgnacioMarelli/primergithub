@@ -18,15 +18,12 @@ body{
 }
 
 /*barra*/
-nav{
-    background-image: linear-gradient(to bottom right,#880d3f,#120b37, #0020D8);
-    
-}
 .barra__logo{
     @include tamanio (100%, 45%)
 
 }
 .barra{
+    background-image: linear-gradient(to bottom right,#880d3f,#120b37, #0020D8);
     font-size: 62.5%;
     margin: 0;
     display: grid;
@@ -38,7 +35,7 @@ nav{
 .Menu_label{
     display: none;
 }
-ul{
+.Lista_Menu{
     margin: 0;
     height: 100%;
     display: flex;
@@ -139,9 +136,23 @@ p{
     width: 100%;
 }
 /*Foooter*/
-.Menu-footer{
-    display: inline;
+footer{
+    grid-area: footer;
 }
+a{
+    text-decoration: none;
+    color: $colorLetras;
+}
+.Menu_Footer{
+    text-align: center;
+    align-self: center;
+}
+.Redes_Footer{
+    align-items: center;
+    justify-content: center;
+}
+
+
 /*Galería*/
 .Banderas{
     align-items: stretch;
@@ -218,11 +229,14 @@ p{
     display: grid;
     grid-template-areas:
     'ImagenAplicacion VideoAplicacion'
-    'ImagenAplicacion VideoAplicacion'
-    'ImagenAplicacion TextoDeApp';
+    'ImagenAplicacion TextoDeApp'
+    'ImagenAplicacion TextoDeApp'
+    'footer footer';
     grid-template-columns: 3fr 7fr;
-    grid-template-rows: 52%;
+    grid-template-rows: 3fr 2fr 2.3fr;
     background-color: #E6E6E6;
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
 }
 .Aplicacion__Video{
     grid-area: VideoAplicacion;
@@ -238,6 +252,10 @@ p{
     color: $colorLetrasTerciario;
     font-size: 1.29rem;
 }
+.Aplicacion__Video--Youtube{
+    @include tamanio(38rem, 100%);
+}
+
 
 
 
@@ -271,8 +289,6 @@ p{
 
 
 
-
-
 /*Celular*/
 
 @media only screen and (min-width:226px) and (max-width:322px){
@@ -282,10 +298,6 @@ p{
         padding: 0;
     }
     /*barra*/
-    nav{
-        background-color:#E6E6E6 ;
-    }
-
     .barra{
         margin: 0;
         display: grid;
@@ -300,9 +312,8 @@ p{
         display: none;
     }
     .barra__logo{
-        @include tamanio(4rem, 60%);
+        @include tamanio(100%, 60%);
         padding-left: 5%;
-        padding-top: 0.5rem;
         grid-area: logo;
     }
 
@@ -318,7 +329,7 @@ p{
     .Menu{
         grid-area: menu;
     }
-    ul{
+    .Lista_Menu{
         display: none;
         li{
             border-color: #007aff ;
@@ -359,51 +370,51 @@ p{
         align-content: center;
     }
 
-        /*Estilo de Main*/
-        p{
-            font-size: 160%;
-        }
-        /*Estilo de Imagenes*/
-        .section1__Imagenes{
-            top: 10rem;
-            position: absolute;
-            @include tamanio(8rem, 6rem);
-        }
-        
-        .section1__Imagenes--Izquierda{
-            left: 7rem;
-        }
-        
-        .section1__Imagenes--DelMedio{
-            left: 12.5rem;
-        }
-        .section1__Imagenes--Derecha{
-            left: 18rem;
-        }
-        
-        .section1__texto--titulo {
-            padding-left: 0;
-        }
-        .section1{
-            background-color:#030B91;
-        }
-        .section1__Spotify{
-            height: 180px;
-        }
-        .section2__Mapa{
-            width: 100%;
-        }
-        /*Foooter*/
-        #Participa{
-            font-size: 200%;
-            padding-top: 10%;
-        }
-        .Texto_form {
-            padding-left: 1rem;
-        }
-        .section2{
-            padding-left: 0%;
-        }
+    /*Estilo de Main*/
+    p{
+        font-size: 160%;
+    }
+    /*Estilo de Imagenes*/
+    .section1__Imagenes{
+        top: 10rem;
+        position: absolute;
+        @include tamanio(8rem, 6rem);
+    }
+    
+    .section1__Imagenes--Izquierda{
+        left: 7rem;
+    }
+    
+    .section1__Imagenes--DelMedio{
+        left: 12.5rem;
+    }
+    .section1__Imagenes--Derecha{
+        left: 18rem;
+    }
+    
+    .section1__texto--titulo {
+        padding-left: 0;
+    }
+    .section1{
+        background-color:#030B91;
+    }
+    .section1__Spotify{
+        height: 180px;
+    }
+    .section2__Mapa{
+        width: 100%;
+    }
+    /*Foooter*/
+    #Participa{
+        font-size: 200%;
+        padding-top: 10%;
+    }
+    .Texto_form {
+        padding-left: 1rem;
+    }
+    .section2{
+        padding-left: 0%;
+    }
 
     /*Aplicacion*/
 
@@ -412,15 +423,20 @@ p{
         grid-template-areas:
         'VideoAplicacion VideoAplicacion'
         'TextoDeApp TextoDeApp'
-        'TextoDeApp TextoDeApp'
-        'TextoDeApp TextoDeApp'
-        'ImagenAplicacion ImagenAplicacion';
-        grid-template-rows: 20% 20% 10%;
+        'ImagenAplicacion ImagenAplicacion'
+        'footer footer';
         background-color: #E6E6E6;
         height: 1200px;
     }
+    footer{
+        grid-area: footer;
+    }
     .VideoAplicacion{
         grid-area: VideoAplicacion;
+    }
+    .Aplicacion__Video--Youtube {
+        height: 100%;
+        width: 100%;
     }
     .ImagenAplicacion{
         grid-area: ImagenAplicacion;
@@ -428,10 +444,11 @@ p{
         overflow: hidden;
     }
     .Imagen{
-        width: 100%;
+        @include tamanio(100%, 100%);
     }
     .Aplicacion__Texto{
         grid-area: TextoDeApp;
+        padding-top: 0;
         &--span{
             font-size: 1rem;
         }
@@ -470,9 +487,6 @@ p{
         padding: 0;
     }
     /*barra*/
-    nav{
-        background-color:#E6E6E6 ;
-    }
     .NombresDePaises{
         color: white;
         font-size: 2rem;
@@ -480,8 +494,7 @@ p{
         padding-left: 50%;
     }
     .barra__logo{
-        padding-top: 0.5rem;
-        @include tamanio(5rem, 65%);
+        @include tamanio(100%, 65%);
         padding-left: 5%;
     }
     .barra{
@@ -499,7 +512,7 @@ p{
         display: none;
     }
 
-    ul{
+    .Lista_Menu{
         display: none;
         li{
             border-color: #007aff ;
@@ -606,10 +619,13 @@ p{
         grid-template-areas:
         'ImagenAplicacion ImagenAplicacion'
         'VideoAplicacion VideoAplicacion'
-        'TextoDeApp TextoDeApp';
-        grid-template-rows: 20% 20% 10%;
+        'TextoDeApp TextoDeApp'
+        'footer footer';
         background-color: #E6E6E6;
         height: 1200px;
+    }
+    footer{
+        grid-area: footer;
     }
     .Aplicacion__Video{
         grid-area: VideoAplicacion;
@@ -625,6 +641,10 @@ p{
         grid-area: TextoDeApp;
         padding-top: 4rem;
     }
+    /*Video App*/
+    .Aplicacion__Video--Youtube{
+        @include tamanio(100%, 100%);
+    }
     /*Calendario*/
     @for $i from 1 to 4 {
         .Tabla__#{$i}{font-size: 0.29rem * $i;}
@@ -637,7 +657,7 @@ p{
 }
 
 @media only screen and (min-width:768px) and (max-width:1288px){
-    ul{
+    .Lista_Menu{
         margin: 0;
         height: 100%;
         display: flex;
@@ -681,14 +701,24 @@ p{
     }
 
     /*Aplicacion*/
-    .Aplicacion__Video{
-        @include tamanio(25,23)
+    .Aplicacion{
+        display: grid;
+        grid-template-areas:
+        'ImagenAplicacion VideoAplicacion'
+        'TextoDeApp TextoDeApp'
+        'TextoDeApp TextoDeApp'
+        'footer footer';
+        grid-template-rows: 3fr 2.3fr 1fr;
     }
-    .Aplicacion__Imagen{
-        width: 5rem;
+    .Aplicacion__Video{
+        @include tamanio(25,23);
     }
     .Imagen{
-        width:250px;
+        @include tamanio(100%, 100%);
+    }
+    /*Video App*/
+    .Aplicacion__Video--Youtube{
+        @include tamanio(100%, 100%);
     }
     
 }
@@ -706,8 +736,7 @@ p{
         background-color:#E6E6E6 ;
     }
     .barra__logo{
-        width: 60%;
-        height: 90%;
+        @include tamanio(100%, 60%);
         padding-left: 5%;
     }
     .barra{
@@ -731,7 +760,7 @@ p{
         @include tamanio (60%, 60%)
     }
 
-    ul{
+    .Lista_Menu{
         margin: 0;
         height: 100%;
         display: flex;
@@ -834,10 +863,14 @@ p{
         grid-template-areas:
         'ImagenAplicacion ImagenAplicacion'
         'VideoAplicacion VideoAplicacion'
-        'TextoDeApp TextoDeApp';
-        grid-template-rows: 20% 20% 10%;
+        'TextoDeApp TextoDeApp'
+        'footer footer';
+        grid-template-rows: 3fr 3fr 2fr;
         background-color: #E6E6E6;
         height: 1200px;
+    }
+    footer{
+        grid-area: footer;
     }
     .Aplicacion__Video{
         grid-area: VideoAplicacion;
@@ -848,7 +881,7 @@ p{
         overflow: hidden;
     }
     .Imagen{
-        width: 100%;
+        @include tamanio(100%, 100%);
     }
     .Aplicacion__Texto{
         grid-area: TextoDeApp;

@@ -24,7 +24,7 @@
             <div class="Menu">
                 <input type="checkbox" class="Menu_label" id="menu_input">
                 <label for="menu_input" class="Menu_label">☰</label>
-                <ul role="lista">
+                <ul class="Lista_Menu" role="lista">
                     <a href="../index.html"><li class="rounded" role="item de la lista">Incio</a></li>
                     <a href="./Galeria.html"><li class="rounded" role="item de la lista">Galería</a></li>
                     <a href="./Calendario.html"><li class="rounded" role="item de la lista">Calendario</a></li>
@@ -46,7 +46,7 @@
         <section class="Aplicacion">
             <!--Video-->
             <section class="Aplicacion__Video">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8S7Sy_dVtRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="Aplicacion__Video--Youtube" src="https://www.youtube.com/embed/8S7Sy_dVtRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </section>
             <!--Imagen-->
             <section class="Aplicacion__Imagen">
@@ -77,6 +77,32 @@
             </section>
         </section>
     </main>
+    <!--Footer-->
+    <footer class="bg-dark text-white">
+        <div class="container">
+            <nav class="row">
+                <!--Logo de Footer-->
+                <a href="../index.html" class="col-4 align-items-center"><img src="../Media/logo-red-bull-batalla.png" alt="Logo de Redbull" class="barra__logo mr-2"></a>
+                <!--Menu del Footer-->
+                <ul class="col-4 list-unstyled Menu_Footer">
+                    <li class="text-uppercase">Menú</li>
+                    <li class="text-reset"><a href="./index.html">Inicio</a></li>
+                    <li class="text-reset"><a href="./Paginas/Galeria.html">Galería</a></li>
+                    <li class="text-reset"><a href="./Paginas/Aplicacion.html">Aplicación</a></li>
+                    <li class="text-reset"><a href="./index.html#Participa">Participa</a></li>
+                </ul>
+                <!--Redes-->
+                <div class="col-4 d-flex Redes_Footer">
+                    <a href="www.twitter.com">
+                        <img src="../Media/Twitter.png" alt="Twitter"></a> 
+                    <a href="https://www.instagram.com/redbullbatalla/">
+                        <img  src="../Media/instagram.png" alt="instagram"></a>
+                    <a href="youtube.com">
+                        <img src="../Media/youtube.png" alt="youtube"></a>
+                </div> 
+            </nav>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

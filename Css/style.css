@@ -12,14 +12,12 @@ body {
   text-align: justify; }
 
 /*barra*/
-nav {
-  background-image: linear-gradient(to bottom right, #880d3f, #120b37, #0020D8); }
-
 .barra__logo {
   height: 100%;
   width: 45%; }
 
 .barra {
+  background-image: linear-gradient(to bottom right, #880d3f, #120b37, #0020D8);
   font-size: 62.5%;
   margin: 0;
   display: grid;
@@ -30,7 +28,7 @@ nav {
 .Menu_label {
   display: none; }
 
-ul {
+.Lista_Menu {
   margin: 0;
   height: 100%;
   display: flex;
@@ -39,7 +37,7 @@ ul {
   justify-content: center;
   box-sizing: content-box;
   margin-bottom: 1rem; }
-  ul li {
+  .Lista_Menu li {
     border-style: groove;
     font-family: 'Bebas Neue', cursive;
     color: white;
@@ -48,7 +46,7 @@ ul {
     width: 30%;
     text-align: center;
     padding-top: 2%; }
-    ul li a {
+    .Lista_Menu li a {
       text-decoration: none;
       color: #ffffff; }
 
@@ -122,8 +120,20 @@ p {
   width: 100%; }
 
 /*Foooter*/
-.Menu-footer {
-  display: inline; }
+footer {
+  grid-area: footer; }
+
+a {
+  text-decoration: none;
+  color: #E6E6E6; }
+
+.Menu_Footer {
+  text-align: center;
+  align-self: center; }
+
+.Redes_Footer {
+  align-items: center;
+  justify-content: center; }
 
 /*Galería*/
 .Banderas {
@@ -205,10 +215,12 @@ p {
 /*Aplicacion*/
 .Aplicacion {
   display: grid;
-  grid-template-areas: 'ImagenAplicacion VideoAplicacion' 'ImagenAplicacion VideoAplicacion' 'ImagenAplicacion TextoDeApp';
+  grid-template-areas: 'ImagenAplicacion VideoAplicacion' 'ImagenAplicacion TextoDeApp' 'ImagenAplicacion TextoDeApp' 'footer footer';
   grid-template-columns: 3fr 7fr;
-  grid-template-rows: 52%;
-  background-color: #E6E6E6; }
+  grid-template-rows: 3fr 2fr 2.3fr;
+  background-color: #E6E6E6;
+  grid-column-gap: 1%;
+  grid-row-gap: 1%; }
 
 .Aplicacion__Video {
   grid-area: VideoAplicacion;
@@ -223,6 +235,10 @@ p {
 .Aplicacion__Texto--span {
   color: #120b37;
   font-size: 1.29rem; }
+
+.Aplicacion__Video--Youtube {
+  height: 38rem;
+  width: 100%; }
 
 /*Calendario*/
 .Calendario__Mes {
@@ -252,8 +268,6 @@ p {
     margin: 0;
     padding: 0; }
   /*barra*/
-  nav {
-    background-color: #E6E6E6; }
   .barra {
     margin: 0;
     display: grid;
@@ -266,10 +280,9 @@ p {
   .barra__Redes {
     display: none; }
   .barra__logo {
-    height: 4rem;
+    height: 100%;
     width: 60%;
     padding-left: 5%;
-    padding-top: 0.5rem;
     grid-area: logo; }
   #menu_input {
     display: none; }
@@ -280,9 +293,9 @@ p {
     background: #880d3f; }
   .Menu {
     grid-area: menu; }
-  ul {
+  .Lista_Menu {
     display: none; }
-    ul li {
+    .Lista_Menu li {
       border-color: #007aff;
       border-style: groove;
       display: block;
@@ -294,10 +307,10 @@ p {
       padding: 10px;
       position: relative;
       z-index: 3; }
-      ul li a {
+      .Lista_Menu li a {
         text-decoration: none;
         color: white; }
-    ul li:hover {
+    .Lista_Menu li:hover {
       background-color: white; }
   input:checked ~ ul {
     display: block; }
@@ -347,20 +360,26 @@ p {
   /*Aplicacion*/
   .Aplicacion {
     display: grid;
-    grid-template-areas: 'VideoAplicacion VideoAplicacion' 'TextoDeApp TextoDeApp' 'TextoDeApp TextoDeApp' 'TextoDeApp TextoDeApp' 'ImagenAplicacion ImagenAplicacion';
-    grid-template-rows: 20% 20% 10%;
+    grid-template-areas: 'VideoAplicacion VideoAplicacion' 'TextoDeApp TextoDeApp' 'ImagenAplicacion ImagenAplicacion' 'footer footer';
     background-color: #E6E6E6;
     height: 1200px; }
+  footer {
+    grid-area: footer; }
   .VideoAplicacion {
     grid-area: VideoAplicacion; }
+  .Aplicacion__Video--Youtube {
+    height: 100%;
+    width: 100%; }
   .ImagenAplicacion {
     grid-area: ImagenAplicacion;
     height: 190px;
     overflow: hidden; }
   .Imagen {
+    height: 100%;
     width: 100%; }
   .Aplicacion__Texto {
-    grid-area: TextoDeApp; }
+    grid-area: TextoDeApp;
+    padding-top: 0; }
     .Aplicacion__Texto--span {
       font-size: 1rem; }
   iframe {
@@ -379,16 +398,13 @@ p {
     margin: 0;
     padding: 0; }
   /*barra*/
-  nav {
-    background-color: #E6E6E6; }
   .NombresDePaises {
     color: white;
     font-size: 2rem;
     background-color: #DB8310;
     padding-left: 50%; }
   .barra__logo {
-    padding-top: 0.5rem;
-    height: 5rem;
+    height: 100%;
     width: 65%;
     padding-left: 5%; }
   .barra {
@@ -402,9 +418,9 @@ p {
     height: 6rem; }
   .barra__Redes {
     display: none; }
-  ul {
+  .Lista_Menu {
     display: none; }
-    ul li {
+    .Lista_Menu li {
       border-color: #007aff;
       border-style: groove;
       display: block;
@@ -416,10 +432,10 @@ p {
       padding: 10px;
       position: relative;
       z-index: 3; }
-      ul li a {
+      .Lista_Menu li a {
         text-decoration: none;
         color: white; }
-    ul li:hover {
+    .Lista_Menu li:hover {
       background-color: white; }
   #menu_input {
     display: none; }
@@ -479,10 +495,11 @@ p {
   /*Aplicacion*/
   .Aplicacion {
     display: grid;
-    grid-template-areas: 'ImagenAplicacion ImagenAplicacion' 'VideoAplicacion VideoAplicacion' 'TextoDeApp TextoDeApp';
-    grid-template-rows: 20% 20% 10%;
+    grid-template-areas: 'ImagenAplicacion ImagenAplicacion' 'VideoAplicacion VideoAplicacion' 'TextoDeApp TextoDeApp' 'footer footer';
     background-color: #E6E6E6;
     height: 1200px; }
+  footer {
+    grid-area: footer; }
   .Aplicacion__Video {
     grid-area: VideoAplicacion; }
   .Aplicacion__Imagen {
@@ -494,6 +511,10 @@ p {
   .Aplicacion__Texto {
     grid-area: TextoDeApp;
     padding-top: 4rem; }
+  /*Video App*/
+  .Aplicacion__Video--Youtube {
+    height: 100%;
+    width: 100%; }
   /*Calendario*/
   .Tabla__1 {
     font-size: 0.29rem; }
@@ -508,7 +529,7 @@ p {
     width: 11rem; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1288px) {
-  ul {
+  .Lista_Menu {
     margin: 0;
     height: 100%;
     display: flex;
@@ -540,13 +561,20 @@ p {
   .section1__Imagenes--Derecha {
     left: 61.3%; }
   /*Aplicacion*/
+  .Aplicacion {
+    display: grid;
+    grid-template-areas: 'ImagenAplicacion VideoAplicacion' 'TextoDeApp TextoDeApp' 'TextoDeApp TextoDeApp' 'footer footer';
+    grid-template-rows: 3fr 2.3fr 1fr; }
   .Aplicacion__Video {
     height: 25;
     width: 23; }
-  .Aplicacion__Imagen {
-    width: 5rem; }
   .Imagen {
-    width: 250px; } }
+    height: 100%;
+    width: 100%; }
+  /*Video App*/
+  .Aplicacion__Video--Youtube {
+    height: 100%;
+    width: 100%; } }
 
 @media only screen and (max-width: 226px) {
   html {
@@ -558,8 +586,8 @@ p {
   nav {
     background-color: #E6E6E6; }
   .barra__logo {
+    height: 100%;
     width: 60%;
-    height: 90%;
     padding-left: 5%; }
   .barra {
     margin: 0;
@@ -579,7 +607,7 @@ p {
   .barra__Redes--Instagram {
     height: 60%;
     width: 60%; }
-  ul {
+  .Lista_Menu {
     margin: 0;
     height: 100%;
     display: flex;
@@ -590,7 +618,7 @@ p {
     padding-right: 15%;
     margin-bottom: 1rem;
     box-sizing: content-box; }
-    ul li {
+    .Lista_Menu li {
       border-color: #007aff;
       border-style: groove;
       color: white;
@@ -600,10 +628,10 @@ p {
       text-align: center;
       padding-top: 2%;
       height: 70%; }
-      ul li a {
+      .Lista_Menu li a {
         text-decoration: none;
         color: white; }
-    ul li:hover {
+    .Lista_Menu li:hover {
       background-color: white; }
   .barra__Redes {
     padding-top: 25%;
@@ -653,10 +681,12 @@ p {
   /*Aplicacion*/
   .Aplicacion {
     display: grid;
-    grid-template-areas: 'ImagenAplicacion ImagenAplicacion' 'VideoAplicacion VideoAplicacion' 'TextoDeApp TextoDeApp';
-    grid-template-rows: 20% 20% 10%;
+    grid-template-areas: 'ImagenAplicacion ImagenAplicacion' 'VideoAplicacion VideoAplicacion' 'TextoDeApp TextoDeApp' 'footer footer';
+    grid-template-rows: 3fr 3fr 2fr;
     background-color: #E6E6E6;
     height: 1200px; }
+  footer {
+    grid-area: footer; }
   .Aplicacion__Video {
     grid-area: VideoAplicacion; }
   .Aplicacion__Imagen {
@@ -664,6 +694,7 @@ p {
     height: 190px;
     overflow: hidden; }
   .Imagen {
+    height: 100%;
     width: 100%; }
   .Aplicacion__Texto {
     grid-area: TextoDeApp; }
