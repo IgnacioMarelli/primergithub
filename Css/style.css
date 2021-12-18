@@ -8,8 +8,9 @@ h1 {
 
 body {
   margin: 0px;
-  background-image: linear-gradient(to bottom, #880d3f, #120b37, #0020D8);
-  text-align: justify; }
+  background-image: linear-gradient(to bottom, #880d3f, #120b37, #0020D8, #880d3f, #120b37);
+  text-align: justify;
+  overflow-x: hidden; }
 
 /*barra*/
 .barra__logo {
@@ -111,7 +112,6 @@ p {
   margin-top: 5rem; }
 
 .section2__Contacto {
-  background-color: #880d3f;
   margin-left: 15%;
   height: 100%;
   width: 70%; }
@@ -140,7 +140,8 @@ a {
   align-items: stretch;
   justify-content: center;
   display: grid;
-  grid-template-columns: 18% 18% 18% 18% 18%; }
+  grid-template-columns: 18% 18% 18% 18% 18%;
+  overflow: hidden; }
 
 .Banderas__Argentina {
   width: 100%;
@@ -197,6 +198,9 @@ a {
   -o-transform: scale(1.25);
   transform: scale(1.25); }
 
+.Paises {
+  padding-top: 6rem; }
+
 .Imagenes {
   display: flex;
   height: 100%;
@@ -206,7 +210,7 @@ a {
   color: white;
   font-size: 4rem;
   background-color: #030B91;
-  padding-left: 50%; }
+  padding-left: 46%; }
 
 .Video__Galeria {
   height: 35rem;
@@ -246,13 +250,17 @@ a {
   color: #E6E6E6;
   padding-left: 45%; }
 
+.card-text {
+  font-size: 100%; }
+
 .Calendario__Imagen {
-  width: 80%; }
+  height: 80rem;
+  width: 100rem; }
 
 /*Error*/
 .Error {
   background-image: url(../Media/error.jpg);
-  height: 100%;
+  height: 65rem;
   width: 100%; }
 
 .Error__Texto {
@@ -386,10 +394,7 @@ a {
     width: 100%; }
   /*Galeria*/
   .NombresDePaises {
-    color: white;
-    font-size: 1.5rem;
-    background-color: #DB8310;
-    padding-left: 50%; } }
+    font-size: 1.5rem; } }
 
 /*Tablet*/
 @media only screen and (max-width: 767px) and (min-width: 321px) {
@@ -399,10 +404,7 @@ a {
     padding: 0; }
   /*barra*/
   .NombresDePaises {
-    color: white;
-    font-size: 2rem;
-    background-color: #DB8310;
-    padding-left: 50%; }
+    font-size: 2rem; }
   .barra__logo {
     height: 100%;
     width: 65%;
@@ -701,7 +703,4 @@ a {
   iframe {
     width: 100%; }
   .NombresDePaises {
-    color: white;
-    font-size: 1rem;
-    background-color: #DB8310;
-    padding-left: 50%; } }
+    font-size: 1rem; } }

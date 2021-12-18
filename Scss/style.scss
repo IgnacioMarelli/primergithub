@@ -13,9 +13,11 @@ h1{
 }
 body{
     margin:0px;
-    background-image: linear-gradient(to bottom, #880d3f,#120b37, #0020D8 );
+    background-image: linear-gradient(to bottom, #880d3f,#120b37, #0020D8,#880d3f,#120b37 );
     text-align: justify;
+    overflow-x: hidden;
 }
+
 
 /*barra*/
 .barra__logo{
@@ -128,13 +130,13 @@ p{
     margin-top: 5rem;
 }
 .section2__Contacto{
-    background-color: #880d3f;
     margin-left: 15%;
     @include tamanio(100%, 70%)
 }
 .section2__Mapa{
     width: 100%;
 }
+
 /*Foooter*/
 footer{
     grid-area: footer;
@@ -159,6 +161,7 @@ a{
     justify-content: center;
     display: grid;
     grid-template-columns: 18% 18% 18% 18% 18%;
+    overflow: hidden;
 }
 .Banderas__Argentina{
     width: 100%;
@@ -211,6 +214,9 @@ a{
     -o-transform:scale(1.25);
     transform:scale(1.25);
 }
+.Paises{
+    padding-top: 6rem;
+}
 .Imagenes{
     display: flex;
     @include tamanio(100%, 100%)
@@ -219,7 +225,7 @@ a{
     color: white;
     font-size: 4rem;
     background-color: $colorFondo;
-    padding-left: 50%;
+    padding-left: 46%;
 }
 .Video__Galeria{
     @include tamanio(35rem, 100%)
@@ -265,17 +271,18 @@ a{
     color: $colorLetras;
     padding-left: 45%;
 }
-.Calendario__Imagen{
-    width: 80%;
+.card-text{
+    font-size: 100%;
 }
-
-
+.Calendario__Imagen{
+    @include tamanio(80rem, 100rem)
+}
 
 
 /*Error*/
 .Error{
     background-image: url(../Media/error.jpg);
-    @include tamanio(100%, 100% )
+    @include tamanio(65rem, 100% )
 }
 .Error__Texto{
     background-color: $colorLetrasSecundario;
@@ -459,10 +466,7 @@ a{
     
     /*Galeria*/
     .NombresDePaises{
-        color: white;
         font-size: 1.5rem;
-        background-color: $colorLetrasSecundario;
-        padding-left: 50%;
     }
 }
 
@@ -488,10 +492,7 @@ a{
     }
     /*barra*/
     .NombresDePaises{
-        color: white;
         font-size: 2rem;
-        background-color: $colorLetrasSecundario;
-        padding-left: 50%;
     }
     .barra__logo{
         @include tamanio(100%, 65%);
@@ -890,9 +891,6 @@ a{
         width: 100%;
     }
     .NombresDePaises{
-        color: white;
         font-size: 1rem;
-        background-color: $colorLetrasSecundario;
-        padding-left: 50%;
     }
 }
