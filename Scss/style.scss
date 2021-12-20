@@ -271,9 +271,6 @@ a{
 
 
 /*Calendario*/
-.Body__Calendario{
-    background-color: $colorLetras;
-}
 .Calendario__Mes{
     background-color: black;
     color: $colorLetras;
@@ -309,7 +306,7 @@ h5{
     color: $colorLetras;
     text-decoration: none;
     font-size: 3rem;
-    height: 80rem;
+    height: 65rem;
     padding:0%;
     margin: 0%;
 }
@@ -317,7 +314,7 @@ h5{
     width: 50%;
 }
 .Error__Div{
-    height: 80rem;
+    height: 65rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -326,6 +323,10 @@ h5{
 }
 .Error__Texto{
     font-size: 10rem;
+}
+.Error__Boton{
+ background-image: linear-gradient(to bottom right,#880d3f,#120b37, #0020D8);
+ color: $colorLetras;
 }
 
 
@@ -502,6 +503,13 @@ h5{
     .NombresDePaises{
         font-size: 1.5rem;
     }
+    /*Error*/
+    .Error__Texto {
+        font-size: 5rem;
+    }
+    .Error__Div {
+        height: 40rem;
+    }
 }
 
 
@@ -531,6 +539,8 @@ h5{
     .barra__logo{
         @include tamanio(100%, 65%);
         padding-left: 5%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
     }
     .barra{
         margin: 0;
@@ -758,7 +768,21 @@ h5{
     
 }
 
-
+@media only screen and (min-width:930px) and (max-width:1200px) {
+    .Calendario__Imagen__Sola{
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+}
+@media only screen and (max-width:900px){
+    .Calendario__Imagen__Sola{
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    .Calendario__Imagen{
+        @include tamanio(100%,100%)
+    }
+}
 @media only screen and (max-width:226px){
     html{
         font-size: 62.5%;
@@ -767,9 +791,6 @@ h5{
         padding: 0;
     }
     /*barra*/
-    nav{
-        background-color:#E6E6E6 ;
-    }
     .barra__logo{
         @include tamanio(100%, 60%);
         padding-left: 5%;

@@ -241,7 +241,7 @@ a {
   grid-area: TextoDeApp; }
 
 .Aplicacion__Texto--span {
-  color: #DB8310;
+  color: black;
   font-size: 1.29rem; }
 
 .Aplicacion__Video--Youtube {
@@ -249,9 +249,6 @@ a {
   width: 100%; }
 
 /*Calendario*/
-.Body__Calendario {
-  background-color: #E6E6E6; }
-
 .Calendario__Mes {
   background-color: black;
   color: #E6E6E6;
@@ -286,7 +283,7 @@ h5 {
   color: #E6E6E6;
   text-decoration: none;
   font-size: 3rem;
-  height: 80rem;
+  height: 65rem;
   padding: 0%;
   margin: 0%; }
 
@@ -294,7 +291,7 @@ h5 {
   width: 50%; }
 
 .Error__Div {
-  height: 80rem;
+  height: 65rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -303,6 +300,10 @@ h5 {
 
 .Error__Texto {
   font-size: 10rem; }
+
+.Error__Boton {
+  background-image: linear-gradient(to bottom right, #880d3f, #120b37, #0020D8);
+  color: #E6E6E6; }
 
 /*Celular*/
 @media only screen and (min-width: 226px) and (max-width: 322px) {
@@ -429,7 +430,12 @@ h5 {
     width: 100%; }
   /*Galeria*/
   .NombresDePaises {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  /*Error*/
+  .Error__Texto {
+    font-size: 5rem; }
+  .Error__Div {
+    height: 40rem; } }
 
 /*Tablet*/
 @media only screen and (max-width: 767px) and (min-width: 321px) {
@@ -443,7 +449,9 @@ h5 {
   .barra__logo {
     height: 100%;
     width: 65%;
-    padding-left: 5%; }
+    padding-left: 5%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; }
   .barra {
     margin: 0;
     display: grid;
@@ -613,6 +621,19 @@ h5 {
     height: 100%;
     width: 100%; } }
 
+@media only screen and (min-width: 930px) and (max-width: 1200px) {
+  .Calendario__Imagen__Sola {
+    padding-left: 10rem;
+    padding-right: 10rem; } }
+
+@media only screen and (max-width: 900px) {
+  .Calendario__Imagen__Sola {
+    padding-left: 0rem;
+    padding-right: 0rem; }
+  .Calendario__Imagen {
+    height: 100%;
+    width: 100%; } }
+
 @media only screen and (max-width: 226px) {
   html {
     font-size: 62.5%;
@@ -620,8 +641,6 @@ h5 {
     margin: 0;
     padding: 0; }
   /*barra*/
-  nav {
-    background-color: #E6E6E6; }
   .barra__logo {
     height: 100%;
     width: 60%;
