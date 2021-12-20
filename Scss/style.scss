@@ -215,7 +215,7 @@ a{
     transform:scale(1.25);
 }
 .Paises{
-    padding-top: 6rem;
+    padding-top: 3rem;
 }
 .Imagenes{
     display: flex;
@@ -224,9 +224,14 @@ a{
 .NombresDePaises{
     color: white;
     font-size: 4rem;
-    background-color: $colorFondo;
+    background-color: $colorFondoTerciario;
     padding-left: 46%;
+    margin-bottom: 3rem;
+    border: inset;
+    border-color: $colorFondoSecundario;
+    border-width: 0.5rem;
 }
+
 .Video__Galeria{
     @include tamanio(35rem, 100%)
 }
@@ -255,7 +260,7 @@ a{
     grid-area: TextoDeApp;
 }
 .Aplicacion__Texto--span{
-    color: $colorLetrasTerciario;
+    color: $colorLetrasSecundario;
     font-size: 1.29rem;
 }
 .Aplicacion__Video--Youtube{
@@ -266,6 +271,9 @@ a{
 
 
 /*Calendario*/
+.Body__Calendario{
+    background-color: $colorLetras;
+}
 .Calendario__Mes{
     background-color: black;
     color: $colorLetras;
@@ -273,26 +281,52 @@ a{
 }
 .card-text{
     font-size: 100%;
+    color: white;
+}
+h5{
+    color: white;
 }
 .Calendario__Imagen{
-    @include tamanio(80rem, 100rem)
+    @include tamanio(30rem, 50rem);
 }
-
+.Calendario__Imagen__Sola{
+    padding-left: 20rem;
+    padding-right: 25rem;
+}
+.card{
+    background-image: linear-gradient(to bottom, #880d3f,#120b37, #0020D8,#880d3f,#120b37 );
+}
+.Calendario__Link{
+    border: inset;
+    background-color:$colorFondoTerciario;
+    border-color: $colorFondoSecundario;
+}
 
 /*Error*/
+
 .Error{
-    background-image: url(../Media/error.jpg);
-    @include tamanio(65rem, 100% )
-}
-.Error__Texto{
-    background-color: $colorLetrasSecundario;
+    background-color: $colorFondoTerciario;
     color: $colorLetras;
     text-decoration: none;
     font-size: 3rem;
+    height: 80rem;
+    padding:0%;
+    margin: 0%;
 }
-
-
-
+.Error__Imagen{
+    width: 50%;
+}
+.Error__Div{
+    height: 80rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.Error__Texto{
+    font-size: 10rem;
+}
 
 
 
@@ -330,7 +364,7 @@ a{
     .Menu_label{
         display: grid;
         color: $colorLetras;
-        border-color: $colorLetrasTerciario;
+        border-color: $colorFondoTerciario;
         background: $colorFondoSecundario;
     }
     .Menu{
@@ -543,7 +577,7 @@ a{
     .Menu_label{
         display: grid;
         color: $colorLetras;
-        border-color: $colorLetrasTerciario;
+        border-color: $colorFondoTerciario;
         background: $colorFondoSecundario;
     }
     .Menu{

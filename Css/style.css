@@ -199,7 +199,7 @@ a {
   transform: scale(1.25); }
 
 .Paises {
-  padding-top: 6rem; }
+  padding-top: 3rem; }
 
 .Imagenes {
   display: flex;
@@ -209,8 +209,12 @@ a {
 .NombresDePaises {
   color: white;
   font-size: 4rem;
-  background-color: #030B91;
-  padding-left: 46%; }
+  background-color: #120b37;
+  padding-left: 46%;
+  margin-bottom: 3rem;
+  border: inset;
+  border-color: #880d3f;
+  border-width: 0.5rem; }
 
 .Video__Galeria {
   height: 35rem;
@@ -237,7 +241,7 @@ a {
   grid-area: TextoDeApp; }
 
 .Aplicacion__Texto--span {
-  color: #120b37;
+  color: #DB8310;
   font-size: 1.29rem; }
 
 .Aplicacion__Video--Youtube {
@@ -245,29 +249,60 @@ a {
   width: 100%; }
 
 /*Calendario*/
+.Body__Calendario {
+  background-color: #E6E6E6; }
+
 .Calendario__Mes {
   background-color: black;
   color: #E6E6E6;
   padding-left: 45%; }
 
 .card-text {
-  font-size: 100%; }
+  font-size: 100%;
+  color: white; }
+
+h5 {
+  color: white; }
 
 .Calendario__Imagen {
-  height: 80rem;
-  width: 100rem; }
+  height: 30rem;
+  width: 50rem; }
+
+.Calendario__Imagen__Sola {
+  padding-left: 20rem;
+  padding-right: 25rem; }
+
+.card {
+  background-image: linear-gradient(to bottom, #880d3f, #120b37, #0020D8, #880d3f, #120b37); }
+
+.Calendario__Link {
+  border: inset;
+  background-color: #120b37;
+  border-color: #880d3f; }
 
 /*Error*/
 .Error {
-  background-image: url(../Media/error.jpg);
-  height: 65rem;
-  width: 100%; }
-
-.Error__Texto {
-  background-color: #DB8310;
+  background-color: #120b37;
   color: #E6E6E6;
   text-decoration: none;
-  font-size: 3rem; }
+  font-size: 3rem;
+  height: 80rem;
+  padding: 0%;
+  margin: 0%; }
+
+.Error__Imagen {
+  width: 50%; }
+
+.Error__Div {
+  height: 80rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center; }
+
+.Error__Texto {
+  font-size: 10rem; }
 
 /*Celular*/
 @media only screen and (min-width: 226px) and (max-width: 322px) {
